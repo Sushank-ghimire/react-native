@@ -2,11 +2,15 @@ import { View, StyleSheet } from "react-native";
 import React from "react";
 import Counter from "@/components/counter";
 import TodoComponent from "@/components/TodoComponent";
+import { Link } from "expo-router";
 
 const index = () => {
   return (
     <View style={styles.container}>
       {/* <Counter /> */}
+      <Link style={{ marginBottom: 10 }} href={"/profile"}>
+        Go to profile
+      </Link>
       <TodoComponent />
     </View>
   );
